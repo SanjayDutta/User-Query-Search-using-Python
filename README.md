@@ -16,7 +16,8 @@ Steps to setup the requirements
           pip install beautifulsoup4
           pip install requests
           
-How does it work?
+How does it work? 
+
 The user has the ability to chose to search either by entering tags or by entering a string, representing their query.
 
 
