@@ -1,0 +1,76 @@
+User Query Search using Python
+
+Stack Overflow is a question and answer site for professional and enthusiast programmers. It's built and run by the community of developer, as part of the Stack Exchange network of sites. A lot of content is present in form of stack overflow questions and answers, various studies point that developers face problems while development life cycles and they ask questions on stack overflow which gets answered by fellow developers across the globe.
+In order for a new developer to understand a concept or solve an issue, it is very difficult to identify the problems. It involves domain experts in form of experienced software developers. The information present is overwhelming and at times can be too much to handle for a budding developer.
+
+#------------------------------------------------------------------------------------------
+
+
+What can this program do?
+This is a Command Line interface program. Its objective is to find the results available on StackOverflow and make it available to the user. It can search either by tags or via string type query. Focus is laid on those results in which there are more matches between the user's tag and the question's tags available on stackoverflow. The output is a sequence of links which are results to the user's query along with their description. These results are generated in a way such that they are similar to the user's query.
+
+
+#------------------------------------------------------------------------------------------
+
+
+Requirements
+Python 3.7
+Python Libraries: BeautifulSoup, Requests
+
+#------------------------------------------------------------------------------------------
+
+Steps to setup the requirements
+  1.	Install python 3.7
+  2.	Open Command Prompt/Terminal and write the following instructions  
+		pip install bs4             
+		pip install beautifulsoup4            
+                                     pip install requests
+
+#------------------------------------------------------------------------------------------
+
+How to run the program?
+
+1.Open terminal/Command Prompt where the program directory is located
+2. Type "python driver_prog.py"
+3. Choose how you want to search about your query (either by tags/ string entry)
+4. Follow the generated instructions.
+5. Wait while the results load.
+
+#------------------------------------------------------------------------------------------
+
+Output
+1. Output varies based on the user input
+2. You might see an output as "website pass", which means data is being processed from online.
+3. Results will involve a series of link which may represent the user query.
+
+#------------------------------------------------------------------------------------------
+
+
+How does this program work?
+
+The program uses two python libraries: bs4 and requests. One is for requesting accessing to the web site and other for parsing the HTML page. The following the elaborate on its working-
+
+1. Searching by Tags-
+Stackoverflow lets user search by tags, e.g. python, JavaScript, pip, etc. All these are tags by which virtue of which a query on stackoverflow can be identified. For example, of a query on stackoverflow is "Windows Service: Is there a way to the name of the service through the start command?" then its query might be "python" and "windows", i.e python and windows are related to the user query. Note that these tags are chosen by users on stackoverflow.
+Now if the user wants to use this program and wants to search by tags then they can enter any number of tags. For example, "python", "pip" and "install". The program will easily search the stackoverflow based upon the user's tags and will give an output based on these tags. 
+	Consider the same set of input of input tags and a new tag, i.e:"python", "pip”, “install" and "ac97". If you search this manually on StackOverflow you would get 0 results. When the programs notice that we have 0 results it will automatically remove the tag (or tags) for which we are getting 0 results. In this case "ac97". The programs will only output those results involving the maximum number of user tags.
+
+
+2. Searching by Query (still in development)-
+Users can enter queries in the form of string, like "how to install python" and the program will fetch out words which will be interpreted as tags in order to search StackOverflow. The identification of words which will be used as tags is done by making sure if the words are available in the following website->
+
+https://www.oxfordreference.com/view/10.1093/acref/9780199688975.001.0001/acref-9780199688975?btog=chap&hide=true&pageSize=20&skipEditions=true&sort=titlesort&source=%2F10.1093%2Facref%2F9780199688975.001.0001%2Facref-9780199688975
+
+Due to the slow response of this website, the user may have to wait a longer time than usual for the results.
+
+#------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
