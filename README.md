@@ -12,9 +12,12 @@ Python Libraries: BeautifulSoup, Requests
 # Steps to setup the requirements
   1.	Install python 3.7
   2.	Open Command Prompt/Terminal and write the following instructions
-          pip install bs4
-          pip install beautifulsoup4
-          pip install requests
+  
+            pip install bs4 
+            
+            pip install beautifulsoup4
+            
+            pip install requests
           
 # How does it work? 
 
