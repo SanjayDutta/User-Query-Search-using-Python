@@ -43,7 +43,8 @@ The procedure takes time due to the fact that we need to check every single word
 
 " https://www.oxfordreference.com/view/10.1093/acref/9780199688975.001.0001/acref-9780199688975?btog=chap&hide=true&pageSize=20&skipEditions=true&sort=titlesort&source=%2F10.1093%2Facref%2F9780199688975.001.0001%2Facref-9780199688975 "
 
-The loading time/responsiveness for this website is very slow. This is one of the main reasons of the slowness of the program.
+The loading time/responsiveness for the above website is very slow. This is one of the main reasons of the slowness of the program.
+Any other method to implement the same is appreciated.
 
 
 
